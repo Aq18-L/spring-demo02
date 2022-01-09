@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.aq.dao.ItemsDao">
+
+    <insert id="save" parameterType="Items">
+        insert into items(name,price,pic,createtime,detail) values(#{name},#{price},#{pic},#{createtime},#{detail})
+    </insert>
+
+    <select id="findAll" resultType="Items">
+        SELECT * FROM items
+    </select>
+</mapper>
