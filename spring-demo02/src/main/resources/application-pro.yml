@@ -1,0 +1,26 @@
+#修改端口
+server:
+  port: 9100
+#自定义配置 简单方式
+studentname: hening
+#自定义配置 pojo形式
+citys:
+  - chengdu
+  - shanghai
+  - shenzhen
+  - beijing
+students:
+  - age: 18
+    sex: 1
+    name: aq
+  - age: 17
+    sex: 1
+    name: hn
+student:
+    name: yjj
+    age: 16
+maps: {"name":"hatao", "age":"17"}
+mysql:
+  url: ${studentname}
+oracle:
+  url: ${studentname}
